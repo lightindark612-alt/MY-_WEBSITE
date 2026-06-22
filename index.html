@@ -54,6 +54,15 @@
     font-size: 1.8rem;
     letter-spacing: 2px;
     color: var(--white);
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+  }
+  .logo img {
+    height: 42px;
+    width: 42px;
+    object-fit: contain;
+    border-radius: 8px;
   }
   .logo span { color: var(--amber); } /* highlights "Ride" in the logo */
   nav ul { display: flex; gap: 2rem; list-style: none; }
@@ -294,16 +303,20 @@
 <!-- ============================================================
      NAVIGATION BAR
      EDIT HERE: change phone number, links, or logo text
-     ============================================================ -->
+     ============================================================ --
+-->
 <nav>
-  <div class="logo">OnlineTaxi<span>Service</span></div>
+  <div class="logo">
+    <img src="logo.png" alt="OnlineTaxiService Logo" />
+    OnlineTaxi<span>Service</span>
+  </div>
   <ul>
     <li><a href="#about">About</a></li>
     <li><a href="#services">Services</a></li>
     <li><a href="#trust">Why Us</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
- 
+  
 </nav>
 
 <!-- ============================================================
